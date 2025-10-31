@@ -25,6 +25,7 @@ modules:
         npm_config_offline: 'true'
     build-commands:
       - npm install --offline
+      - npm run build
       - |
         . flatpak-node/electron-builder-arch-args.sh
         npm run dist -- $ELECTRON_BUILDER_ARCH_ARGS  --linux --dir
@@ -43,8 +44,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/db-mobile/resonance.git
-        tag: v62
-        commit: 946e14cf9720ff25e404262284107f9f0926389e
+        tag: v69
+        commit: c1618ef7751399fff9e2b478b2e3f82fb99362f6
         x-checker-data:
           type: git
           tag-pattern: ^v\d+$
