@@ -1,36 +1,30 @@
 id: io.github.db_mobile.resonance
-runtime: org.freedesktop.Platform
-runtime-version: '25.08'
-sdk: org.freedesktop.Sdk
-base: org.electronjs.Electron2.BaseApp
-base-version: '25.08'
+runtime: org.gnome.Platform
+runtime-version: '48'
+sdk: org.gnome.Sdk
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.node20
-build-options:
-  append-path: /usr/lib/sdk/node20/bin
-command: run.sh
+  - org.freedesktop.Sdk.Extension.rust-stable
+command: resonance
 finish-args:
   - --device=dri
   - --share=ipc
   - --share=network
-  - --socket=x11
+  - --socket=wayland
+  - --socket=fallback-x11
 modules:
   - name: resonance
     buildsystem: simple
     build-options:
+      append-path: /usr/lib/sdk/node20/bin:/usr/lib/sdk/rust-stable/bin
       env:
-        XDG_CACHE_HOME: /run/build/resonance/flatpak-node/cache
+        CARGO_HOME: /run/build/resonance/cargo
         npm_config_cache: /run/build/resonance/flatpak-node/npm-cache
-        npm_config_nodedir: /usr/lib/sdk/node20
-        npm_config_offline: 'true'
     build-commands:
       - npm install --offline
       - npm run build
-      - |
-        . flatpak-node/electron-builder-arch-args.sh
-        npm run dist -- $ELECTRON_BUILDER_ARCH_ARGS  --linux --dir
-      - cp -a dist/linux*unpacked /app/main
-      - install -Dm755 -t /app/bin/ run.sh
+      - cd src-tauri && cargo build --release --frozen
+      - install -Dm755 src-tauri/target/release/resonance /app/bin/resonance
       - install -Dm644 assets/icons/icon_16x16.png /app/share/icons/hicolor/16x16/apps/io.github.db_mobile.resonance.png
       - install -Dm644 assets/icons/icon_32x32.png /app/share/icons/hicolor/32x32/apps/io.github.db_mobile.resonance.png
       - install -Dm644 assets/icons/icon_48x48.png /app/share/icons/hicolor/48x48/apps/io.github.db_mobile.resonance.png
@@ -44,13 +38,10 @@ modules:
     sources:
       - type: git
         url: https://github.com/db-mobile/resonance.git
-        tag: v1.9.3
-        commit: d428157324ee04ff6b33747e2ecfc1aeae21892c
+        tag: v2.0.1
+        commit: f50785097208797ff511ceb29ae9621d4f30c1a5
         x-checker-data:
           type: git
           tag-pattern: ^v\d+$
       - generated-sources.json
-      - type: script
-        dest-filename: run.sh
-        commands:
-          - zypak-wrapper /app/main/resonance "$@"
+      - cargo-sources.json
