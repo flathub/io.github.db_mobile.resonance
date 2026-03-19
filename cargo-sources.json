@@ -1042,6 +1042,19 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
+        "url": "https://static.crates.io/crates/data-encoding/data-encoding-2.10.0.crate",
+        "sha256": "d7a1e2f27636f116493b8b860f5546edb47c8d8f8ea73e1d2a20be88e28d1fea",
+        "dest": "cargo/vendor/data-encoding-2.10.0"
+    },
+    {
+        "type": "inline",
+        "contents": "{\"package\": \"d7a1e2f27636f116493b8b860f5546edb47c8d8f8ea73e1d2a20be88e28d1fea\", \"files\": {}}",
+        "dest": "cargo/vendor/data-encoding-2.10.0",
+        "dest-filename": ".cargo-checksum.json"
+    },
+    {
+        "type": "archive",
+        "archive-type": "tar-gzip",
         "url": "https://static.crates.io/crates/deranged/deranged-0.5.8.crate",
         "sha256": "7cd812cc2bc1d69d4764bd80df88b4317eaef9e773c75226407d9bc0876b211c",
         "dest": "cargo/vendor/deranged-0.5.8"
@@ -5098,14 +5111,14 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/selectors/selectors-0.36.0.crate",
-        "sha256": "223b960be86f7d302b7168cdbab137f9bdbf7e04a90c185312fab14dff49dc5f",
-        "dest": "cargo/vendor/selectors-0.36.0"
+        "url": "https://static.crates.io/crates/selectors/selectors-0.36.1.crate",
+        "sha256": "c5d9c0c92a92d33f08817311cf3f2c29a3538a8240e94a6a3c622ce652d7e00c",
+        "dest": "cargo/vendor/selectors-0.36.1"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"223b960be86f7d302b7168cdbab137f9bdbf7e04a90c185312fab14dff49dc5f\", \"files\": {}}",
-        "dest": "cargo/vendor/selectors-0.36.0",
+        "contents": "{\"package\": \"c5d9c0c92a92d33f08817311cf3f2c29a3538a8240e94a6a3c622ce652d7e00c\", \"files\": {}}",
+        "dest": "cargo/vendor/selectors-0.36.1",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -5366,6 +5379,19 @@
         "type": "inline",
         "contents": "{\"package\": \"170fb83ab34de17dc69aa7c67482b22218ddb85da56546f9bd6b929e32a05930\", \"files\": {}}",
         "dest": "cargo/vendor/servo_arc-0.4.3",
+        "dest-filename": ".cargo-checksum.json"
+    },
+    {
+        "type": "archive",
+        "archive-type": "tar-gzip",
+        "url": "https://static.crates.io/crates/sha1/sha1-0.10.6.crate",
+        "sha256": "e3bf829a2d51ab4a5ddf1352d8470c140cadc8301b2ae1789db023f01cedd6ba",
+        "dest": "cargo/vendor/sha1-0.10.6"
+    },
+    {
+        "type": "inline",
+        "contents": "{\"package\": \"e3bf829a2d51ab4a5ddf1352d8470c140cadc8301b2ae1789db023f01cedd6ba\", \"files\": {}}",
+        "dest": "cargo/vendor/sha1-0.10.6",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -6320,6 +6346,19 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
+        "url": "https://static.crates.io/crates/tokio-tungstenite/tokio-tungstenite-0.24.0.crate",
+        "sha256": "edc5f74e248dc973e0dbb7b74c7e0d6fcc301c694ff50049504004ef4d0cdcd9",
+        "dest": "cargo/vendor/tokio-tungstenite-0.24.0"
+    },
+    {
+        "type": "inline",
+        "contents": "{\"package\": \"edc5f74e248dc973e0dbb7b74c7e0d6fcc301c694ff50049504004ef4d0cdcd9\", \"files\": {}}",
+        "dest": "cargo/vendor/tokio-tungstenite-0.24.0",
+        "dest-filename": ".cargo-checksum.json"
+    },
+    {
+        "type": "archive",
+        "archive-type": "tar-gzip",
         "url": "https://static.crates.io/crates/tokio-util/tokio-util-0.7.18.crate",
         "sha256": "9ae9cec805b01e8fc3fd2fe289f89149a9b66dd16786abd8b19cfa7b48cb0098",
         "dest": "cargo/vendor/tokio-util-0.7.18"
@@ -6653,6 +6692,19 @@
         "type": "inline",
         "contents": "{\"package\": \"e421abadd41a4225275504ea4d6566923418b7f05506fbc9c0fe86ba7396114b\", \"files\": {}}",
         "dest": "cargo/vendor/try-lock-0.2.5",
+        "dest-filename": ".cargo-checksum.json"
+    },
+    {
+        "type": "archive",
+        "archive-type": "tar-gzip",
+        "url": "https://static.crates.io/crates/tungstenite/tungstenite-0.24.0.crate",
+        "sha256": "18e5b8366ee7a95b16d32197d0b2604b43a0be89dc5fac9f8e96ccafbaedda8a",
+        "dest": "cargo/vendor/tungstenite-0.24.0"
+    },
+    {
+        "type": "inline",
+        "contents": "{\"package\": \"18e5b8366ee7a95b16d32197d0b2604b43a0be89dc5fac9f8e96ccafbaedda8a\", \"files\": {}}",
+        "dest": "cargo/vendor/tungstenite-0.24.0",
         "dest-filename": ".cargo-checksum.json"
     },
     {
