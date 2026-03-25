@@ -22,7 +22,7 @@ modules:
         npm_config_cache: /run/build/resonance/flatpak-node/npm-cache
     build-commands:
       - npm install --offline
-      - npm run build
+      - npm run build:prod
       - cd src-tauri && cargo build --release --frozen
       - install -Dm755 src-tauri/target/release/resonance /app/bin/resonance
       - install -Dm644 assets/icons/icon_16x16.png /app/share/icons/hicolor/16x16/apps/io.github.db_mobile.resonance.png
@@ -38,8 +38,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/db-mobile/resonance.git
-        tag: v2.7.0
-        commit: f4467cb6398a4aeb273f447f70ee3c1d272a9ef9
+        tag: v2.7.1
+        commit: a1dca8f39e5a2d13fd1df0f2df4ae984b786b2fa
         x-checker-data:
           type: git
           tag-pattern: ^v\d+$
