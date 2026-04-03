@@ -34,12 +34,12 @@ modules:
       - install -Dm644 assets/icons/icon_512x512.png /app/share/icons/hicolor/512x512/apps/io.github.db_mobile.resonance.png
       - install -Dm644 assets/icons/icon.svg /app/share/icons/hicolor/scalable/apps/io.github.db_mobile.resonance.svg
       - install -Dm644 assets/desktop/io.github.db_mobile.resonance.desktop /app/share/applications/io.github.db_mobile.resonance.desktop
-      - install -Dm644 assets/appdata/io.github.db_mobile.resonance.metainfo.xml /app/share/metainfo/io.github.db_mobile.resonance.metainfo.xml
+      - install -Dm644 packaging/flatpak/io.github.db_mobile.resonance.metainfo.xml /app/share/metainfo/io.github.db_mobile.resonance.metainfo.xml
     sources:
       - type: git
         url: https://github.com/db-mobile/resonance.git
-        tag: v2.7.3
-        commit: 5de9f5a9420fd1c799da9097df26f21be92b588d
+        tag: v2.7.4
+        commit: f9a0fe5161b0dc1193183b8a21647a5d8ff42915
         x-checker-data:
           type: git
           tag-pattern: ^v\d+$
