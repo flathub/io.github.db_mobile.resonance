@@ -38,8 +38,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/db-mobile/resonance.git
-        tag: v2.8.5
-        commit: f6fc55966243332e852b6ea5d57c63900f1df1e3
+        tag: v2.8.6
+        commit: d0bad01c2f4408c81b922ee3a09e5e80df4f7692
         x-checker-data:
           type: git
           tag-pattern: ^v\d+$
