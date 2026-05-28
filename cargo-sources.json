@@ -496,27 +496,27 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/brotli/brotli-8.0.2.crate",
-        "sha256": "4bd8b9603c7aa97359dbd97ecf258968c95f3adddd6db2f7e7a5bef101c84560",
-        "dest": "cargo/vendor/brotli-8.0.2"
+        "url": "https://static.crates.io/crates/brotli/brotli-8.0.3.crate",
+        "sha256": "8119e4516436f5708bbc474a9d395bf12f1b5395e93a92a56e647ac3388c8610",
+        "dest": "cargo/vendor/brotli-8.0.3"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"4bd8b9603c7aa97359dbd97ecf258968c95f3adddd6db2f7e7a5bef101c84560\", \"files\": {}}",
-        "dest": "cargo/vendor/brotli-8.0.2",
+        "contents": "{\"package\": \"8119e4516436f5708bbc474a9d395bf12f1b5395e93a92a56e647ac3388c8610\", \"files\": {}}",
+        "dest": "cargo/vendor/brotli-8.0.3",
         "dest-filename": ".cargo-checksum.json"
     },
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/brotli-decompressor/brotli-decompressor-5.0.0.crate",
-        "sha256": "874bb8112abecc98cbd6d81ea4fa7e94fb9449648c93cc89aa40c81c24d7de03",
-        "dest": "cargo/vendor/brotli-decompressor-5.0.0"
+        "url": "https://static.crates.io/crates/brotli-decompressor/brotli-decompressor-5.0.1.crate",
+        "sha256": "5962523e1b92ce1b5e793d9169b9943eece10d39f62550bc04bb605d75b94924",
+        "dest": "cargo/vendor/brotli-decompressor-5.0.1"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"874bb8112abecc98cbd6d81ea4fa7e94fb9449648c93cc89aa40c81c24d7de03\", \"files\": {}}",
-        "dest": "cargo/vendor/brotli-decompressor-5.0.0",
+        "contents": "{\"package\": \"5962523e1b92ce1b5e793d9169b9943eece10d39f62550bc04bb605d75b94924\", \"files\": {}}",
+        "dest": "cargo/vendor/brotli-decompressor-5.0.1",
         "dest-filename": ".cargo-checksum.json"
     },
     {
