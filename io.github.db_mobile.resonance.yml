@@ -25,6 +25,13 @@ modules:
       - npm run build:prod
       - cd src-tauri && cargo build --release --frozen
       - install -Dm755 src-tauri/target/release/resonance /app/bin/resonance
+      - |
+        case "$(uname -m)" in
+          x86_64) v=linux-x86_64 ;;
+          aarch64) v=linux-aarch_64 ;;
+          *) echo "unsupported arch $(uname -m) for vendored protoc" >&2; exit 1 ;;
+        esac
+        install -Dm755 "$(find "$CARGO_HOME/vendor" -path "*protoc-bin-vendored-$v-*/bin/protoc" | head -n1)" /app/bin/protoc
       - install -Dm644 assets/icons/icon_16x16.png /app/share/icons/hicolor/16x16/apps/io.github.db_mobile.resonance.png
       - install -Dm644 assets/icons/icon_32x32.png /app/share/icons/hicolor/32x32/apps/io.github.db_mobile.resonance.png
       - install -Dm644 assets/icons/icon_48x48.png /app/share/icons/hicolor/48x48/apps/io.github.db_mobile.resonance.png
@@ -38,8 +45,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/db-mobile/resonance.git
-        tag: v2.9.0
-        commit: 02279e2b358b09b5dc7a38066eed06bf5d68d1eb
+        tag: v2.9.1
+        commit: 13c78c9b98345d4b7c181c52fa8a476bcf94e344
         x-checker-data:
           type: git
           tag-pattern: ^v\d+$
