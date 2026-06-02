@@ -4838,14 +4838,14 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/rustls-native-certs/rustls-native-certs-0.8.3.crate",
-        "sha256": "612460d5f7bea540c490b2b6395d8e34a953e52b491accd6c86c8164c5932a63",
-        "dest": "cargo/vendor/rustls-native-certs-0.8.3"
+        "url": "https://static.crates.io/crates/rustls-native-certs/rustls-native-certs-0.8.4.crate",
+        "sha256": "dab5152771c58876a2146916e53e35057e1a4dfa2b9df0f0305b07f611fdea4d",
+        "dest": "cargo/vendor/rustls-native-certs-0.8.4"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"612460d5f7bea540c490b2b6395d8e34a953e52b491accd6c86c8164c5932a63\", \"files\": {}}",
-        "dest": "cargo/vendor/rustls-native-certs-0.8.3",
+        "contents": "{\"package\": \"dab5152771c58876a2146916e53e35057e1a4dfa2b9df0f0305b07f611fdea4d\", \"files\": {}}",
+        "dest": "cargo/vendor/rustls-native-certs-0.8.4",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -6814,14 +6814,14 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/unicode-segmentation/unicode-segmentation-1.13.2.crate",
-        "sha256": "9629274872b2bfaf8d66f5f15725007f635594914870f65218920345aa11aa8c",
-        "dest": "cargo/vendor/unicode-segmentation-1.13.2"
+        "url": "https://static.crates.io/crates/unicode-segmentation/unicode-segmentation-1.13.3.crate",
+        "sha256": "c6f5d3c3b1bf09027a88a6bc961fc00497d651009560b5463668dc81b0fa87a8",
+        "dest": "cargo/vendor/unicode-segmentation-1.13.3"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"9629274872b2bfaf8d66f5f15725007f635594914870f65218920345aa11aa8c\", \"files\": {}}",
-        "dest": "cargo/vendor/unicode-segmentation-1.13.2",
+        "contents": "{\"package\": \"c6f5d3c3b1bf09027a88a6bc961fc00497d651009560b5463668dc81b0fa87a8\", \"files\": {}}",
+        "dest": "cargo/vendor/unicode-segmentation-1.13.3",
         "dest-filename": ".cargo-checksum.json"
     },
     {
