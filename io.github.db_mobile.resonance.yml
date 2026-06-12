@@ -12,6 +12,7 @@ finish-args:
   - --share=network
   - --socket=wayland
   - --socket=fallback-x11
+  - --talk-name=org.freedesktop.secrets
 modules:
   - name: resonance
     buildsystem: simple
@@ -45,8 +46,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/db-mobile/resonance.git
-        tag: v2.10.2
-        commit: 191db42f701b50dca94c3e59a58e7a31751eb263
+        tag: v2.11.0
+        commit: 434dc9928509325d0178e0eedcb2c521e1652215
         x-checker-data:
           type: git
           tag-pattern: ^v\d+$
