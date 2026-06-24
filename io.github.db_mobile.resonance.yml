@@ -1,6 +1,6 @@
 id: io.github.db_mobile.resonance
 runtime: org.gnome.Platform
-runtime-version: '49'
+runtime-version: '50'
 sdk: org.gnome.Sdk
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.node20
@@ -45,8 +45,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/db-mobile/resonance.git
-        tag: v2.11.4
-        commit: b7d55e69e10ccf29bc651206686b8e933dcbd37b
+        tag: v2.11.5
+        commit: 5924d32eb5016a8aefb9d5e45ac8df02ac4164b9
         x-checker-data:
           type: git
           tag-pattern: ^v\d+$
