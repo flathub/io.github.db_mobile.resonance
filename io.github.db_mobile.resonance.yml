@@ -3,7 +3,7 @@ runtime: org.gnome.Platform
 runtime-version: '50'
 sdk: org.gnome.Sdk
 sdk-extensions:
-  - org.freedesktop.Sdk.Extension.node20
+  - org.freedesktop.Sdk.Extension.node22
   - org.freedesktop.Sdk.Extension.rust-stable
 command: resonance
 rename-icon: icon
@@ -17,7 +17,7 @@ modules:
   - name: resonance
     buildsystem: simple
     build-options:
-      append-path: /usr/lib/sdk/node20/bin:/usr/lib/sdk/rust-stable/bin
+      append-path: /usr/lib/sdk/node22/bin:/usr/lib/sdk/rust-stable/bin
       env:
         CARGO_HOME: /run/build/resonance/cargo
         npm_config_cache: /run/build/resonance/flatpak-node/npm-cache
@@ -39,8 +39,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/db-mobile/resonance.git
-        tag: v2.11.5
-        commit: 5924d32eb5016a8aefb9d5e45ac8df02ac4164b9
+        tag: v2.12.0
+        commit: 55bf05038379298572908358632191d0d012e7e8
         x-checker-data:
           type: git
           tag-pattern: ^v\d+$
