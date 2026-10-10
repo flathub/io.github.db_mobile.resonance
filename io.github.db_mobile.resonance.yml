@@ -1,6 +1,6 @@
 id: io.github.db_mobile.resonance
 runtime: org.gnome.Platform
-runtime-version: '50'
+runtime-version: '51'
 sdk: org.gnome.Sdk
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.node22
@@ -24,7 +24,7 @@ modules:
     build-commands:
       - npm install --offline
       - npm run build:prod
-      - cd src-tauri && cargo build --release --frozen
+      - cd src-tauri && REMOVE_UNUSED_COMMANDS="$PWD" cargo build --release --frozen
       - install -Dm755 src-tauri/target/release/resonance /app/bin/resonance
       - |
         case "$(uname -m)" in
@@ -39,8 +39,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/db-mobile/resonance.git
-        tag: v3.3.2
-        commit: b6e62345ffa14f0ddedc5305e1172d3381419a0e
+        tag: v3.3.3
+        commit: ce606647e55b5a7b8124df67016ac1d79189782a
         x-checker-data:
           type: git
           tag-pattern: ^v\d+(?:\.\d+)*$
