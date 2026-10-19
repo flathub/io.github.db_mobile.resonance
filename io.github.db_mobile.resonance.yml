@@ -24,8 +24,8 @@ modules:
     build-commands:
       - npm install --offline
       - npm run build:prod
-      - cd src-tauri && REMOVE_UNUSED_COMMANDS="$PWD" cargo build --release --frozen
-      - install -Dm755 src-tauri/target/release/resonance /app/bin/resonance
+      - REMOVE_UNUSED_COMMANDS="$PWD/src-tauri" cargo build --release --frozen -p resonance
+      - install -Dm755 target/release/resonance /app/bin/resonance
       - |
         case "$(uname -m)" in
           x86_64) v=linux-x86_64 ;;
@@ -39,8 +39,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/db-mobile/resonance.git
-        tag: v3.4.0
-        commit: b9b2d01871d0845337716655b1163ef1eb9ab0e9
+        tag: v3.5.0
+        commit: cfd3748520bec7fce1b1703a5623eb04bf581c16
         x-checker-data:
           type: git
           tag-pattern: ^v\d+(?:\.\d+)*$
