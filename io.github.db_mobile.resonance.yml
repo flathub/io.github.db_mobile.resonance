@@ -26,21 +26,14 @@ modules:
       - npm run build:prod
       - REMOVE_UNUSED_COMMANDS="$PWD/src-tauri" cargo build --release --frozen -p resonance
       - install -Dm755 target/release/resonance /app/bin/resonance
-      - |
-        case "$(uname -m)" in
-          x86_64) v=linux-x86_64 ;;
-          aarch64) v=linux-aarch_64 ;;
-          *) echo "unsupported arch $(uname -m) for vendored protoc" >&2; exit 1 ;;
-        esac
-        install -Dm755 "$(find "$CARGO_HOME/vendor" -path "*protoc-bin-vendored-$v-*/bin/protoc" | head -n1)" /app/bin/protoc
       - install -Dm644 assets/icons/icon.svg -t /app/share/icons/hicolor/scalable/apps/
       - install -Dm644 assets/desktop/io.github.db_mobile.resonance.desktop -t /app/share/applications/
       - install -Dm644 packaging/flatpak/io.github.db_mobile.resonance.metainfo.xml -t /app/share/metainfo/
     sources:
       - type: git
         url: https://github.com/db-mobile/resonance.git
-        tag: v3.5.1
-        commit: 6644fa788929a158ed705ca3cd02763842d07faa
+        tag: v3.5.2
+        commit: 335593d9e5aac741baeef6300b0eb0cc4c08a0db
         x-checker-data:
           type: git
           tag-pattern: ^v\d+(?:\.\d+)*$
