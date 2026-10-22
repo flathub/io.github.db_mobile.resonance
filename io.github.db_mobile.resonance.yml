@@ -22,7 +22,7 @@ modules:
         CARGO_HOME: /run/build/resonance/cargo
         npm_config_cache: /run/build/resonance/flatpak-node/npm-cache
     build-commands:
-      - npm install --offline
+      - npm install --offline --legacy-peer-deps
       - npm run build:prod
       - REMOVE_UNUSED_COMMANDS="$PWD/src-tauri" cargo build --release --frozen -p resonance
       - install -Dm755 target/release/resonance /app/bin/resonance
@@ -32,8 +32,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/db-mobile/resonance.git
-        tag: v3.5.2
-        commit: 335593d9e5aac741baeef6300b0eb0cc4c08a0db
+        tag: v3.5.3
+        commit: e0bff751f8be95872b4ba848784c287a826831b7
         x-checker-data:
           type: git
           tag-pattern: ^v\d+(?:\.\d+)*$
