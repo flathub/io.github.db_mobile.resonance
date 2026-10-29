@@ -1380,14 +1380,14 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/ctutils/ctutils-0.4.6.crate",
-        "sha256": "fe3e9d21d39e6f39ff46e03d5b621424f88ee23d8a1672c6bfc9ccc7f2da4f6a",
-        "dest": "cargo/vendor/ctutils-0.4.6"
+        "url": "https://static.crates.io/crates/ctutils/ctutils-0.4.7.crate",
+        "sha256": "a2376ffd6f96d8a9db59875b4b6b0237d6900b5baf64279714e05493ce64828a",
+        "dest": "cargo/vendor/ctutils-0.4.7"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"fe3e9d21d39e6f39ff46e03d5b621424f88ee23d8a1672c6bfc9ccc7f2da4f6a\", \"files\": {}}",
-        "dest": "cargo/vendor/ctutils-0.4.6",
+        "contents": "{\"package\": \"a2376ffd6f96d8a9db59875b4b6b0237d6900b5baf64279714e05493ce64828a\", \"files\": {}}",
+        "dest": "cargo/vendor/ctutils-0.4.7",
         "dest-filename": ".cargo-checksum.json"
     },
     {
