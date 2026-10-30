@@ -36,6 +36,6 @@ modules:
         commit: 29dd501ab8eeb17d28772c74a73199eeffde1663
         x-checker-data:
           type: git
-          tag-pattern: ^v\d+(?:\.\d+)*$
+          tag-pattern: '^v(\d+(?:\.\d+)*)$'
       - generated-sources.json
       - cargo-sources.json
